@@ -32,6 +32,7 @@
     "pdfjs-dist": "^2.0.489",
     "require-native-executable": "^1.0.1",
     "shelljs": "^0.8.1",
+    "tmp": "^0.1.0",
     "with-tmp-dir-promise": "^1.0.1"
   },
   "devDependencies": {
