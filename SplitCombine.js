@@ -26,7 +26,7 @@ async function splitPDF (pdfBuffer) {
         const pagePaths = pages.map(page => path.join(tmpdir, page));
         const pagePromises = pagePaths.map(jpg => fs.readFile(jpg));
         return Promise.all(pagePromises);
-    }, { unsafeCleanup: true, prefix: 'pdftoolz-split-' });
+    }, { unsafeCleanup: false, prefix: 'pdftoolz-split-' });
 }
 
 class PDFCombineError extends Error {}
